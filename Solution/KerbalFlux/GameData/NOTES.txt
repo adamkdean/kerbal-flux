@@ -1,0 +1,13 @@
+﻿
+/*-----------------------------------------*\
+|                KERBAL FLUX                |
+\*-----------------------------------------*/
+
+* Plan:
+- Generator that can convert power into "flux" which will be used by engine
+- Engine that can convert flux into thrust without a finite reagent
+- Ability to fly from surface to orbit and back to surface in a single stage craft
+
+* Parts:
+- KFG100 Flux Generator
+- KFE100 Flux Engine
