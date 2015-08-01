@@ -45,19 +45,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="GameData\Parts\KFE100\model.mu" />
+    <None Include="GameData\Parts\KFG100\model.mu" />
+    <None Include="GameData\Resources\Flux.cfg" />
     <Compile Include="Plugin\Internals\CompatibilityChecker.cs" />
     <Compile Include="Plugin\Parts\KFE100FluxEngine.cs" />
     <Compile Include="Plugin\Parts\KFG100FluxGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GameData\Parts\KFE100\model000.dds" />
+    <Content Include="GameData\Parts\KFG100\Processor_Large.dds" />
     <Content Include="GameData\version.txt" />
     <Content Include="GameData\NOTES.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="GameData\Parts\KFE100\part.cfg" />
+    <None Include="GameData\Parts\KFG100\part.cfg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(ProjectDir)GameData" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\$(ProjectName)" /E /I /F /Y
+    <PostBuildEvent>rd /s /q "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\$(ProjectName)\"
+xcopy "$(ProjectDir)GameData" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\$(ProjectName)" /E /I /F /Y
 xcopy "$(TargetPath)" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData\$(ProjectName)" /E /I /F /Y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

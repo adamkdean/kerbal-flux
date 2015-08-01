@@ -4,8 +4,8 @@
 \*-----------------------------------------*/
 
 * Plan:
-- Generator that can convert power into "flux" which will be used by engine
-- Engine that can convert flux into thrust without a finite reagent
+- Generator that can harvest "space flux" and convert to electrical charge
+- Engine that is powered by electrical charge but doesn't use a reagent
 - Ability to fly from surface to orbit and back to surface in a single stage craft
 
 * Parts:
