@@ -47,6 +47,8 @@
   <ItemGroup>
     <None Include="GameData\Parts\KFE100\model.mu" />
     <None Include="GameData\Parts\KFG100\model.mu" />
+    <None Include="GameData\Parts\KFT1k\part.cfg" />
+    <None Include="GameData\Parts\KFT1k\SmallTank.mu" />
     <None Include="GameData\Resources\Flux.cfg" />
     <Compile Include="Plugin\Internals\CompatibilityChecker.cs" />
     <Compile Include="Plugin\Parts\KFE100FluxEngine.cs" />
@@ -56,6 +58,8 @@
   <ItemGroup>
     <Content Include="GameData\Parts\KFE100\model000.dds" />
     <Content Include="GameData\Parts\KFG100\Processor_Large.dds" />
+    <Content Include="GameData\Parts\KFT1k\ksp_s_resourceContainer_diff.dds" />
+    <Content Include="GameData\Parts\KFT1k\ksp_s_resourceContainer_normal.dds" />
     <Content Include="GameData\version.txt" />
     <Content Include="GameData\NOTES.txt" />
   </ItemGroup>
