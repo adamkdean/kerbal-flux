@@ -45,27 +45,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="GameData\Parts\KFE100\model.mu" />
-    <None Include="GameData\Parts\KFG100\model.mu" />
-    <None Include="GameData\Parts\KFT1k\part.cfg" />
-    <None Include="GameData\Parts\KFT1k\SmallTank.mu" />
+    <None Include="GameData\Parts\Engine\KFEMicroRCS\NewModel.mu" />
+    <None Include="GameData\Parts\Engine\KFEMicroRCS\part.cfg" />
+    <None Include="GameData\Parts\Engine\KFE25\model.mu" />
+    <None Include="GameData\Parts\Engine\KFE25\part.cfg" />
+    <None Include="GameData\Parts\Engine\KFE150\model.mu" />
+    <None Include="GameData\Parts\FuelTank\KFT250\part.cfg" />
+    <None Include="GameData\Parts\FuelTank\KFT250\SmallTank.mu" />
+    <None Include="GameData\Parts\FuelTank\KFT4k\part.cfg" />
+    <None Include="GameData\Parts\FuelTank\KFT4k\LargeTank.mu" />
+    <None Include="GameData\Parts\Utility\KFG25\model.mu" />
+    <None Include="GameData\Parts\Utility\KFG25\part.cfg" />
+    <None Include="GameData\Parts\Utility\KFG100\model.mu" />
+    <None Include="GameData\Parts\FuelTank\KFT1k\part.cfg" />
+    <None Include="GameData\Parts\FuelTank\KFT1k\SmallTank.mu" />
     <None Include="GameData\Resources\Flux.cfg" />
     <Compile Include="Plugin\Internals\CompatibilityChecker.cs" />
-    <Compile Include="Plugin\Parts\KFE100FluxEngine.cs" />
-    <Compile Include="Plugin\Parts\KFG100FluxGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GameData\Parts\KFE100\model000.dds" />
-    <Content Include="GameData\Parts\KFG100\Processor_Large.dds" />
-    <Content Include="GameData\Parts\KFT1k\ksp_s_resourceContainer_diff.dds" />
-    <Content Include="GameData\Parts\KFT1k\ksp_s_resourceContainer_normal.dds" />
+    <Content Include="GameData\Parts\Engine\KFE25\model000.dds" />
+    <Content Include="GameData\Parts\Engine\KFE150\model000.dds" />
+    <Content Include="GameData\Parts\Engine\KFEMicroRCS\vernierEngine3UV.dds" />
+    <Content Include="GameData\Parts\FuelTank\KFT250\ksp_s_resourceContainer_diff.dds" />
+    <Content Include="GameData\Parts\FuelTank\KFT250\ksp_s_resourceContainer_normal.dds" />
+    <Content Include="GameData\Parts\FuelTank\KFT4k\ksp_l_resourceContainer_diff.dds" />
+    <Content Include="GameData\Parts\FuelTank\KFT4k\ksp_l_resourceContainer_norm.dds" />
+    <Content Include="GameData\Parts\Utility\KFG25\Processor_Large.dds" />
+    <Content Include="GameData\Parts\Utility\KFG100\Processor_Large.dds" />
+    <Content Include="GameData\Parts\FuelTank\KFT1k\ksp_s_resourceContainer_diff.dds" />
+    <Content Include="GameData\Parts\FuelTank\KFT1k\ksp_s_resourceContainer_normal.dds" />
     <Content Include="GameData\version.txt" />
     <Content Include="GameData\NOTES.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="GameData\Parts\KFE100\part.cfg" />
-    <None Include="GameData\Parts\KFG100\part.cfg" />
+    <None Include="GameData\Parts\Engine\KFE150\part.cfg" />
+    <None Include="GameData\Parts\Utility\KFG100\part.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
